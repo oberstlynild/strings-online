@@ -1,0 +1,35 @@
+.no-search-results-header {
+    color: #00F9B6;
+    font-size: 35px;
+    margin: 0;
+}
+
+.no-search-results-subheader {
+    color: white;;
+    font-size: 25px;
+    margin: 0;
+}
+
+.search-item {
+    border: 1px solid black;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.search-item-title {
+    color: white;
+}
+.search-item-description {
+    color: #B1B1B1;
+}
+
+.search-item-read-more {
+    height: 50px;
+    width: 150px;
+    font-size: 16px;
+    border: none;
+    background-color: #00F9B6;
+    border-radius: 3px;
+    color: #1F5E5B;
+    cursor: pointer;
+}

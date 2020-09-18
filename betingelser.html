@@ -1,0 +1,148 @@
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings Online :: Betingelser</title>
+    <script src="https://kit.fontawesome.com/727fcb130f.js" crossorigin="anonymous"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/breadcrump.css">
+    <link rel="stylesheet" href="css/products.css">
+    <link rel="stylesheet" href="css/betingelser.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+
+<body onload="createLeftNav()">
+
+    <section class="top-info">
+        <p><i class="fas fa-envelope"></i> SALES@STRINGSONLINE.COM</p>
+        <p><i class="fas fa-phone-alt"></i> +45 98 12 22 68</p>
+    </section>
+
+    <section class="fake-nav"></section>
+
+    <nav class="nav-desktop">
+        <div class="nav-image">
+            <a href="index.html"><img src="images/string-logo.png" alt="strings logo"></a>
+        </div>
+        <div class="nav-left">
+            <div class="nav-links">
+                <a href="index.html">Forside</a>
+                <a href="betingelser.html">Salgs- og handelbetingelser</a>
+                <a href="login.html" class="nav-login-href"><button class="nav-login">Login</button></a>
+            </div>
+        </div>
+        <div class="nav-right">
+            <form id="nav-form">
+                <input type="text" id="search-input" placeholder="Indtast søgeord">
+                <button onclick="submitSearch()"><i class="fas fa-arrow-right"></i></button>
+            </form>
+        </div>
+    </nav>
+
+    <section id="breadcrump">
+        <p><i class="fas fa-home"></i> <a href="index.html">Forside</a> <span class="breadcrump-slash">/</span> <a
+                href="betingelser.html">Salgs- og handelbetingelser</a> <span id="breadcrump-dynamic"></p>
+    </section>
+
+    <section class="page-wrapper">
+        <nav class="page-nav">
+        </nav>
+        <section class="page-content">
+            <section id="handelsbetingelser-wrapper">
+                <h1 id="handelbetingelser-header">Salgs- og handelbetingelser</h1>
+                <p class="handelbetingelser-paragraf">
+                    Handelsbetingelser skal som udgangspunkt beskrive de generelle vilkår og betingelser, som gælder, når en
+                    virksomhed sælger produkter eller tjenesteydelser. Handelsbetingelserne beskytter både køber og sælger,
+                    og skal derfor tilpasses din virksomheds forretning. Læs med og bliv klogere på, hvad handelsbetingelser
+                    skal indeholde, og hvilke lovkrav, der stilles til dem.
+                </p>
+                <h2 class="handelbetingelser-subheader">Hvad er handelsbetingelser?</h2>
+                <p class="handelbetingelser-paragraf">
+                    Handelsbetingelserne - også kaldet handelsvilkårene - beskriver de forhold, der gælder mellem en kunde
+                    og en virksomhed i forbindelse med salg af en vare eller tjenesteydelse. Hvis du driver en webshop, skal
+                    du være opmærksom på, at din virksomheds handelsbetingelser skal ligge frit tilgængeligt for kunden på
+                    hjemmesiden og at disse handelsbetingelser skal være dækkende i forhold til virksomhedens aktiviteter.
+                </p>
+                <h2 class="handelbetingelser-subheader">Er der nogle lovkrav til handelsbetingelser?</h2>
+                <p class="handelbetingelser-paragraf">
+                    Handelsbetingelser kan laves på forskellige måder, og der er ingen lov, der bestemmer præcis, hvordan
+                    handelsbetingelser skal udformes. Dog kan virksomheden ikke lave sine handelsbetingelser fuldstændigt
+                    frit.
+    
+                    Alt efter hvad virksomheden sælger og hvem kunderne er, stilles der en række krav til
+                    handelsbetingelserne. Der er ikke en enkelt lov, der bestemmer kravene til handelsbetingelser, men
+                    derimod en række love, der dikterer indhold og udformning af en virksomheds handelsbetingelser. Det
+                    drejer sig blandt andet om Købeloven, Forbrugeraftaleloven og E-handelsloven.
+                </p>
+                <h2 class="handelbetingelser-subheader">Hvad skal handelsbetingelser generelt indeholde?</h2>
+                <p class="handelbetingelser-paragraf">
+                    Handelsbetingelser bør altid tilpasses den enkelte forretning. Ifølge loven er der dog en række forhold,
+                    der skal beskrives og som er hensigtsmæssige at inkludere i handelsbetingelserne:
+    
+                <ol id="handelsbetingelser-list">
+                    <li>Virksomhedsoplysninger</li>
+                    <p class="handelsbetingelser-list-paragraf">
+                        Her beskrives virksomheden med alle nødvendige oplysninger såsom navn, adresse og CVR-nummer.
+                    </p>
+                    <li>Priser og betaling</li>
+                    <p class="handelsbetingelser-list-paragraf">
+                        Her beskrives, hvordan priserne er opgjort (valuta, moms etc.) samt hvordan betalingen foregår
+                        (betalingsformer, eventuelle kreditter etc.).
+                    </p>
+                    <li>Levering</li>
+                    <p class="handelsbetingelser-list-paragraf">
+                        Her beskrives, hvordan levering af varen/ydelsen sker, og hvornår kunden kan forvente, at den bliver
+                        leveret.
+                    </p>
+                    <li>Ansvar</li>
+                    <p class="handelsbetingelser-list-paragraf">
+                        Her beskrives, hvilket ansvar virksomheden har i forbindelse med salget af varen eller
+                        tjenesteydelsen. Virksomhedens ansvar afhænger af, hvad virksomheden sælger og om virksomheden
+                        sælger til forbruger eller andre erhvervsdrivende.
+                    </p>
+                    <li>Returnering af varer</li>
+                    <p class="handelsbetingelser-list-paragraf">
+                        Her beskrives, hvordan kunden skal håndtere varer, der skal returneres. Det kan f.eks. være i
+                        forhold til, hvordan varen skal returneres, og hvilken stand varen skal være i.
+                    </p>
+                    <li>Databehandling</li>
+                    <p class="handelsbetingelser-list-paragraf">
+                        Her beskrives, hvordan virksomheden benytter kundedata. En virksomhed modtager kundedata, når en
+                        kunde køber varer gennem e-handel eller webshops.
+                    </p>
+                    <li>Klagemuligheder</li>
+                    <p class="handelsbetingelser-list-paragraf">
+                        Hvis en virksomhed sælger til private forbrugere, er virksomheden forpligtet til at oplyse om
+                        klagemulighederne inden for EU.
+                    </p>
+                    <li>Kontakt</li>
+                    <p class="handelsbetingelser-list-paragraf">
+                        Virksomheden skal oplyse om, hvordan kunder eller brugere kan kontakte virksomheden, hvis de har
+                        spørgsmål, klager eller kommentarer.
+                    </p>
+                    <li>Ændringer</li>
+                    <p class="handelsbetingelser-list-paragraf">
+                        Her beskrives, hvornår og hvordan virksomheden kan ændre deres handelsbetingelser. Det vil ofte være
+                        en fordel at skrive, at virksomheden kan ændre handelsbetingelser ensidigt (uden at kunderne skal
+                        være enige).
+                    </p>
+                </ol>
+            </section>
+        </section>
+    </section>
+    <footer>
+        <img src="images/string-logo.png" alt="strings logo">
+        <button>MAKES MUSIC DO FINE!</button>
+    </footer>
+    <script src="js/left-nav.js"></script>
+    <script src="js/profiler.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/navigation.js"></script>
+</body>
+
+</html>

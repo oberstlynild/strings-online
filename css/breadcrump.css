@@ -1,0 +1,36 @@
+#breadcrump {
+  margin: 25px;
+  color: #00F9B6;
+  border-top: 1px solid #393939;
+  border-bottom: 1px solid #393939;
+  font-size: 16px;
+}
+
+#breadcrump p {
+  margin: 0;
+}
+
+#breadcrump a {
+  color: #00F9B6;
+  text-decoration: none;
+}
+
+#breadcrump .breadcrump-slash {
+  color: white;
+}
+
+#breadcrump:hover {
+  cursor: pointer;
+}
+
+#breadcrump #ordrehistorik-breadcrump {
+  position: absolute;
+  right: 25px;
+}
+
+#breadcrump #ordrehistorik-breadcrump-actual {
+  position: absolute;
+  right: 25px;
+  color: #6E6E6E;
+}
+/*# sourceMappingURL=breadcrump.css.map */

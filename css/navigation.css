@@ -1,0 +1,207 @@
+/*TOP NAV*/
+.top-info {
+  position: absolute;
+  right: 25px;
+  top: 0;
+}
+
+.top-info a {
+  text-decoration: none;
+  color: white;
+}
+
+.top-info p {
+  font-size: 20px;
+  display: inline-block;
+  color: white;
+  padding-left: 15px;
+}
+
+.top-info .fa-shopping-basket {
+  font-size: 45px;
+  cursor: pointer;
+}
+
+.top-info .shopping-basket-items-wrapper {
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+  background-color: red;
+  border-radius: 50%;
+  position: absolute;
+  right: 2px;
+  bottom: 24px;
+}
+
+.top-info .shopping-basket-items-wrapper p {
+  cursor: pointer;
+  position: relative;
+  font-weight: 600;
+  right: 5px;
+  bottom: 20px;
+}
+
+.fake-nav {
+  pointer-events: none;
+  margin: 25px;
+  position: absolute;
+  top: 66.5px;
+  left: 265px;
+  width: 49%;
+  height: 57px;
+  border: 1px solid white;
+}
+
+.nav-desktop {
+  margin: 25px;
+  padding: 30px 15px 15px 15px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  grid-gap: 15px;
+}
+
+.nav-desktop .nav-left,
+.nav-desktop .nav-right {
+  margin-top: 50px;
+}
+
+.nav-desktop .nav-left .nav-links a {
+  font-size: 20px;
+  color: #FFFFFF;
+  text-decoration: none;
+  margin-right: 15px;
+}
+
+.nav-desktop .nav-left .nav-links button {
+  height: 35px;
+  width: 100px;
+  font-size: 20px;
+  color: #1F5E5B;
+  background-color: #00F9B6;
+  border: 1px solid #1F5E5B;
+  border-radius: 3px;
+}
+
+.nav-desktop .nav-left .nav-links button:hover {
+  cursor: pointer;
+}
+
+.nav-desktop .nav-right {
+  position: relative;
+  bottom: 15px;
+}
+
+.nav-desktop .nav-right input {
+  height: 60px;
+  text-indent: 5px;
+  font-size: 20px;
+  color: #00F9B6;
+  background-color: #0A1D1C;
+  border: 1px solid #1F5E5B;
+  border-radius: 3px;
+}
+
+.nav-desktop .nav-right input::-webkit-input-placeholder {
+  color: #00F9B6;
+}
+
+.nav-desktop .nav-right input:-ms-input-placeholder {
+  color: #00F9B6;
+}
+
+.nav-desktop .nav-right input::-ms-input-placeholder {
+  color: #00F9B6;
+}
+
+.nav-desktop .nav-right input::placeholder {
+  color: #00F9B6;
+}
+
+.nav-desktop .nav-right button {
+  height: 60px;
+  width: 50px;
+  font-size: 20px;
+  color: #0A1D1C;
+  background-color: #00F9B6;
+  border: 1px solid #1F5E5B;
+  border-radius: 3px;
+}
+
+.nav-desktop .nav-right button:hover {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1300px) {
+  .top-info {
+    position: relative;
+    margin-top: 15px;
+    margin-bottom: -50px;
+    right: 0;
+  }
+  .top-info p {
+    text-align: center;
+    display: block;
+    padding: 0;
+  }
+  .top-info .shopping-basket-items-wrapper {
+    position: absolute;
+    right: 48%;
+    bottom: 1px;
+  }
+  .top-info .shopping-basket-items-wrapper p {
+    position: relative;
+    right: 0px;
+    bottom: 22px;
+  }
+  .fake-nav {
+    display: none;
+  }
+  .nav-desktop {
+    display: block;
+    padding: 1px 15px 15px 15px;
+  }
+  .nav-desktop .nav-image {
+    display: none;
+  }
+}
+
+/*SIDE NAV*/
+.page-nav {
+  color: #00F9B6;
+  width: 100%;
+  background-color: #0A1D1C;
+  border: 1px solid #1F5E5B;
+  font-size: 20px;
+}
+
+.page-nav ul,
+.page-nav li {
+  list-style-type: none;
+  list-style-position: inside;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.page-nav .page-nav-main-group {
+  padding: 5px;
+}
+
+.page-nav .page-nav-subgroup {
+  display: none;
+  margin-left: 15px;
+}
+
+.page-nav .subgruppe-li {
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+@media only screen and (max-width: 1300px) {
+  .page-nav {
+    font-size: 15px;
+  }
+}
+/*# sourceMappingURL=navigation.css.map */

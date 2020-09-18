@@ -1,0 +1,121 @@
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings Online :: Kassen</title>
+    <script src="https://kit.fontawesome.com/727fcb130f.js" crossorigin="anonymous"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/breadcrump.css">
+    <link rel="stylesheet" href="css/products.css">
+    <link rel="stylesheet" href="css/kasse.css">
+</head>
+
+<body onload="createLeftNav()">
+
+    <section class="top-info">
+        <p><i class="fas fa-envelope"></i> SALES@STRINGSONLINE.COM</p>
+        <p><i class="fas fa-phone-alt"></i> +45 98 12 22 68</p>
+    </section>
+
+    <section class="fake-nav"></section>
+
+    <nav class="nav-desktop">
+        <div class="nav-image">
+            <a href="index.html"><img src="images/string-logo.png" alt="strings logo"></a>
+        </div>
+        <div class="nav-left">
+            <div class="nav-links">
+                <a href="index.html">Forside</a>
+                <a href="betingelser.html">Salgs- og handelbetingelser</a>
+                <a href="login.html" class="nav-login-href"><button class="nav-login">Login</button></a>
+            </div>
+        </div>
+        <div class="nav-right">
+            <form id="nav-form">
+                <input type="text" id="search-input" placeholder="Indtast søgeord">
+                <button onclick="submitSearch()"><i class="fas fa-arrow-right"></i></button>
+            </form>
+        </div>
+    </nav>
+
+    <section id="breadcrump">
+        <p><i class="fas fa-home"></i> <a href="index.html">Forside</a> <span class="breadcrump-slash">/</span> <a
+                href="kurv.html">Kurv</a> <span class="breadcrump-slash">/</span> <a href="kassen.html">Kasse</a> <span
+                id="breadcrump-dynamic"><a href="ordrehistorik.html"><span id="ordrehistorik-breadcrump">Ordrehistorik</span></a></p>
+    </section>
+
+    <section class="page-wrapper">
+        <nav class="page-nav">
+        </nav>
+        <section class="page-content">
+            <h1 class="kasse-header">Kasse</h1>
+            <form onsubmit="validerKassen()" id="kasse-form">
+                <section class="kassen-grid">
+                    <div class="kassen-left">
+                        <h2 class="form-headers">Fakturerings- & leveringsadresse</h2>
+                        <input type="text" id="kasse-fornavn" placeholder="Fornavn" />
+                        <input type="text" id="kasse-efternavn" placeholder="Efternavn" />
+                        <input type="text" id="kasse-adresse" placeholder="Gade/vej og husnummer" />
+                        <div class="kassen-half-half-grid">
+                            <input type="text" id="kasse-postnr" placeholder="Postnr." />
+                            <input type="text" id="kasse-by" placeholder="By" />
+                        </div>
+                        <button type="button" id="anden-levering-knap" onclick="showDeliveryContent()"></button>
+                        <p id="anden-levering-tekst">Anden leveringsadresse</p>
+                        <div id="anden-levering-wrapper">
+                            <input type="text" id="kasse-adresse-anden" placeholder="Gade/vej og husnummer" />
+                            <div class="kassen-half-half-grid">
+                                <input type="text" id="kasse-postnr-anden" placeholder="Postnr." />
+                                <input type="text" id="kasse-by-anden" placeholder="By" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="kassen-mid">
+                        <h2 class="form-headers">Email og telefon</h2>
+                        <input type="text" id="kasse-email" placeholder="Emailadresse" />
+                        <input type="text" id="kasse-tlfnr" placeholder="Telefonnummer" />
+                        <div id="tlfnr-spoiler">
+                            <p>
+                                Med dit telefonnummer kan vi kontakte dig i
+                                tilfælde af spørgsmål eller problemer. Hvis du
+                                oplyser dit mobilnummer, kan vi også sende dig en
+                                forsendelsesbekræftelse via SMS.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="kassen-right">
+                        <h2 class="form-headers">Betalingsmetode</h2>
+                        <div id="betalingsmetode-wrapper">
+                            <input type="radio" id="kasse-betalingsmetode">
+                            <p id="betalingsmetode-bank">Bankoverførsel</p>
+                        </div>
+                        <div id="betalingsmetode-kort-wrapper">
+                            <input type="radio" id="betaling-kort" disabled>
+                            <p id="betalingsmetode-kort">Kreditkort (Mastercard/VISA)<span class="payment-cards"><i class="fab fa-cc-mastercard"></i><i class="fab fa-cc-visa"></i></span></p>
+                            <input type="text" id="kasse-kortnummer" placeholder="Kortnummer" disabled/>
+                            <div id="betalingsmetode-dato-wrapper">
+                                <input type="text" id="kasse-maened" placeholder="Måned" disabled/>
+                                <input type="text" id="kasse-aar" placeholder="År" disabled/>
+                            </div>
+                            <input type="text" id="kasse-kontrolciffer" placeholder="Kontrolciffer" disabled/>
+                            <input type="text" id="kasse-kortindehaver" placeholder="Kort indehaver" disabled/>
+                        </div>
+                        <input type="submit" value="Betal">
+                    </div>
+                </section>
+            </form>
+        </section>
+    </section>
+    <script src="js/left-nav.js"></script>
+    <script src="js/profiler.js"></script>
+    <script src="js/validerKasse.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/navigation.js"></script>
+</body>
+
+</html>

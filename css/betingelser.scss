@@ -1,0 +1,43 @@
+#handelsbetingelser-wrapper {
+    #handelbetingelser-header {
+        color: white;
+        font-size: 35px;
+        margin: 0;
+    }
+    
+    .handelbetingelser-paragraf {
+        color: #B1B1B1;
+    }
+    
+    .handelbetingelser-subheader {
+        color: white;
+    }
+    
+    .color-highlight {
+        color: #00F9B6;
+    }
+    
+    ol {
+        list-style: none;
+        counter-reset: item;
+    }
+    
+    li {
+        counter-increment: item;
+        margin-bottom: 5px;
+        color: white;
+    }
+    
+    li:before {
+        margin-right: 15px;
+        content: counter(item);
+        color: #00F9B6;
+    }
+    
+    .handelsbetingelser-list-paragraf {
+        color: #B1B1B1;
+        margin-left: 25px;
+        margin-bottom: 25px;
+        margin-top: 0;
+    }
+}

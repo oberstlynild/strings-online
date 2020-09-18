@@ -1,0 +1,131 @@
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings Online :: Forside</title>
+    <script src="https://kit.fontawesome.com/727fcb130f.js" crossorigin="anonymous"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/breadcrump.css">
+    <link rel="stylesheet" href="css/products.css">
+    <link rel="stylesheet" href="css/forside.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+
+<body onload="createLeftNav()">
+
+    <section class="top-info">
+        <p><i class="fas fa-envelope"></i> <a href="mailto:sales@stringsonline.com">SALES@STRINGSONLINE.COM</a></p>
+        <p><i class="fas fa-phone-alt"></i> <a href="callto:+4598122268">+45 98 12 22 68</a></p>
+    </section>
+
+    <section class="fake-nav"></section>
+
+    <nav class="nav-desktop">
+        <div class="nav-image">
+            <a href="index.html"><img src="images/string-logo.png" alt="strings logo"></a>
+        </div>
+        <div class="nav-left">
+            <div class="nav-links">
+                <a href="index.html">Forside</a>
+                <a href="betingelser.html">Salgs- og handelbetingelser</a>
+                <a href="login.html" class="nav-login-href"><button class="nav-login">Login</button></a>
+            </div>
+        </div>
+        <div class="nav-right">
+            <form id="nav-form">
+                <input type="text" id="search-input" placeholder="Indtast søgeord">
+                <button onclick="submitSearch()"><i class="fas fa-arrow-right"></i></button>
+            </form>
+        </div>
+    </nav>
+
+    <section id="breadcrump">
+        <p><i class="fas fa-home"></i> <a href="">Forside</a> <span id="breadcrump-dynamic"></p>
+    </section>
+
+    <section class="page-wrapper">
+        <nav class="page-nav">
+        </nav>
+        <section class="page-content">
+            <img src="images/hero-banner.png" alt="forside hero banner" class="forside-image-header"
+                id="forside-image-header">
+            <button onclick='location.href="produkt.html?id=13"' id="forside-href-knap">Læs mere</button>
+            <section id="forside-content">
+                <p id="forside-header">Kundernes <span>favoritter</span></p>
+                <section id="forside-favorit-grid">
+                    <div class="forside-favorit-grid-item">
+                        <div>
+                            <img src="images/forside-favoritter-guitar.png" alt="">
+                        </div>
+                        <div>
+                            <h2 class="forside-item-header">Les Paul Studio 2018 Gloss Black</h2>
+                            <p class="forside-item-description">
+                                The Les Paul Studio embodies the essential Les Paul features with enhancements for
+                                playability and tonal versatility. The rosewood fingerboard and slim taper mahogany neck
+                                provide effortless playability and comfort.
+                            </p>
+                            <button class="forside-item-pris">Pris: DKK 19.199,00</button>
+                        </div>
+                    </div>
+                    <div class="forside-favorit-grid-item">
+                        <div>
+                            <img src="images/forside-favoritter-guitar.png" alt="">
+                        </div>
+                        <div>
+                            <h2 class="forside-item-header">Les Paul Studio 2018 Gloss Black</h2>
+                            <p class="forside-item-description">
+                                The Les Paul Studio embodies the essential Les Paul features with enhancements for
+                                playability and tonal versatility. The rosewood fingerboard and slim taper mahogany neck
+                                provide effortless playability and comfort.
+                            </p>
+                            <button class="forside-item-pris">Pris: DKK 19.199,00</button>
+                        </div>
+                    </div>
+                    <div class="forside-favorit-grid-item">
+                        <div>
+                            <img src="images/forside-favoritter-guitar.png" alt="">
+                        </div>
+                        <div>
+                            <h2 class="forside-item-header">Les Paul Studio 2018 Gloss Black</h2>
+                            <p class="forside-item-description">
+                                The Les Paul Studio embodies the essential Les Paul features with enhancements for
+                                playability and tonal versatility. The rosewood fingerboard and slim taper mahogany neck
+                                provide effortless playability and comfort.
+                            </p>
+                            <button class="forside-item-pris">Pris: DKK 19.199,00</button>
+                        </div>
+                    </div>
+                    <div class="forside-favorit-grid-item">
+                        <div>
+                            <img src="images/forside-favoritter-guitar.png" alt="">
+                        </div>
+                        <div>
+                            <h2 class="forside-item-header">Les Paul Studio 2018 Gloss Black</h2>
+                            <p class="forside-item-description">
+                                The Les Paul Studio embodies the essential Les Paul features with enhancements for
+                                playability and tonal versatility. The rosewood fingerboard and slim taper mahogany neck
+                                provide effortless playability and comfort.
+                            </p>
+                            <button class="forside-item-pris">Pris: DKK 19.199,00</button>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </section>
+    </section>
+    <footer>
+        <img src="images/string-logo.png" alt="strings logo">
+        <button>MAKES MUSIC DO FINE!</button>
+    </footer>
+    <script src="js/left-nav.js"></script>
+    <script src="js/profiler.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/navigation.js"></script>
+</body>
+
+</html>

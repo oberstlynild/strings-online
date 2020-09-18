@@ -1,0 +1,34 @@
+#breadcrump {
+    margin: 25px;
+    color: #00F9B6;
+    border-top: 1px solid #393939;
+    border-bottom: 1px solid #393939;
+    font-size: 16px;
+
+    p {
+        margin: 0;
+    }
+
+    a {
+        color: #00F9B6;
+        text-decoration: none;
+    }
+
+    .breadcrump-slash {
+        color: white;
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    #ordrehistorik-breadcrump {
+        position: absolute;
+        right: 25px;
+    }
+    #ordrehistorik-breadcrump-actual {
+        position: absolute;
+        right: 25px;
+        color: #6E6E6E;
+    }
+}

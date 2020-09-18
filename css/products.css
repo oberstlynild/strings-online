@@ -1,0 +1,131 @@
+.product-item {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 3fr 1fr;
+      grid-template-columns: 1fr 3fr 1fr;
+  grid-gap: 15px;
+  margin-bottom: 15px;
+  border: 1px solid #393939;
+  border-radius: 3px;
+}
+
+.product-item img {
+  height: 200px;
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: left;
+     object-position: left;
+}
+
+.product-item h2 {
+  color: #FFFFFF;
+  font-size: 25px;
+}
+
+.product-item p {
+  color: #B1B1B1;
+}
+
+.product-item span {
+  color: #00F9B6;
+}
+
+.product-item span:hover {
+  cursor: pointer;
+}
+
+.product-item button {
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  display: block;
+  width: 80%;
+  height: 50px;
+  margin-top: 20px;
+}
+
+.product-item .product-price {
+  border: 1px solid #393939;
+  border-radius: 3px;
+  background-color: transparent;
+}
+
+.product-item .product-basket {
+  border: none;
+  border-radius: 3px;
+  background-color: #D10061;
+}
+
+.product-item .product-basket:hover {
+  cursor: pointer;
+}
+
+.product-item .product-stock {
+  float: right;
+  margin-right: 20%;
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+#brand-products-title {
+  color: #AFAFAF;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+#product-items {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.sorter-efter-pris-lav {
+  margin-bottom: 15px;
+  position: absolute;
+  right: 200px;
+  background-color: #00F9B6;
+  border: 1px solid #1F5E5B;
+  border-radius: 3px;
+  color: #131313;
+  padding: 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.sorter-efter-pris-high {
+  margin-bottom: 15px;
+  position: absolute;
+  right: 25px;
+  background-color: #00F9B6;
+  border: 1px solid #1F5E5B;
+  border-radius: 3px;
+  color: #131313;
+  padding: 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1300px) {
+  .product-item {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+  }
+  .product-item .product-stock {
+    float: none;
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
+  .product-item button {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
+}
+/*# sourceMappingURL=products.css.map */
